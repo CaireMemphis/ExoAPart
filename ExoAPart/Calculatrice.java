@@ -10,9 +10,9 @@ public class Calculatrice {
     public void affichageCalcul() {
         Scanner scanChif = new Scanner(System.in);
 
-        System.out.print("Nouveau calcul = O/N");
+        /*System.out.print("Nouveau calcul = O/N");
         nouv = scanChif.next();
-        System.out.printf(nouv);
+        System.out.printf(nouv);*/
 
        if (nouv == "O") {
 
@@ -30,21 +30,22 @@ public class Calculatrice {
            System.out.print("selectionner l'action à faire (+, -, * ou /) :");
            choix = scanNom.next();
 
-           int somme = un + deux;
-           int supp = un - deux;
-           int multi = (deux * un);
-           int div = (un / deux);
+
+
+
+
 
             switch (choix) {
 
                 case "+": {
+                    int somme = un + deux;
                     System.out.printf(un + " + " + deux);
                     System.out.printf("  =  " + somme);
                     break;
                 }
 
                 case "-": {
-
+                    int supp = un - deux;
                     System.out.printf(un + " - " + deux);
                     System.out.printf("  =  " + supp);
                     break;
@@ -52,7 +53,7 @@ public class Calculatrice {
                 }
 
                 case "*": {
-
+                    int multi = (deux * un);
                     System.out.printf(un + " * " + deux);
                     System.out.printf("  =  " + multi);
                     break;
@@ -61,6 +62,7 @@ public class Calculatrice {
                 }
 
                 case "/": {
+                    int div = (un / deux);
                     System.out.printf(un + " / " + deux);
                     System.out.printf("  =  " + div);
                     break;
@@ -69,7 +71,6 @@ public class Calculatrice {
 
 
             }
-            System.out.println();
 
         }
 
